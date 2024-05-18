@@ -3,8 +3,8 @@ class Solution:
         new=[]
         a=max(candies)
         for i in range(len(candies)):
-            candies[i]+=extraCandies
-            if candies[i]>=a:
+            #OR candies[i]+=extraCandies
+            if candies[i]+extraCandies>=a:
                 new.append(True)
             else:
                 new.append(False)
